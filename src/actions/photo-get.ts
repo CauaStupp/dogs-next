@@ -7,7 +7,7 @@ import { Photo } from "./photos-get";
 export interface Comment {
   comment_ID: string;
   comment_post_ID: string;
-  commet_author: string;
+  comment_author: string;
   comment_content: string;
 }
 

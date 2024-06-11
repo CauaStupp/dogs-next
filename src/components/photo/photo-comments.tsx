@@ -29,7 +29,7 @@ export default function PhotoComments(props: {
       >
         {comments.map((comment) => (
           <li key={comment.comment_ID}>
-            <b>{comment.commet_author}: </b>
+            <b>{comment.comment_author}: </b>
             <span>{comment.comment_content}</span>
           </li>
         ))}
