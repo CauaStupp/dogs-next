@@ -1,6 +1,6 @@
 "use client";
 
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { useFormState, useFormStatus } from "react-dom";
 import styles from "./photo-comment-form.module.css";
 import EnviarIcon from "../icons/enviar-icon";
@@ -51,6 +51,7 @@ export default function PhotoCommentsForm({
         name="comment"
         id="comment"
         placeholder="Comente..."
+        value={comment}
         onChange={({ target }) => setComment(target.value)}
       ></textarea>
       <FormButton />
